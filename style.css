@@ -2,7 +2,7 @@ div {
   border: 1px solid white;
   text-align: center;
   font-family: Verdana;
-  color: white;
+  color: black;
 }
 
 img {
@@ -31,9 +31,9 @@ img {
 
 #name {
   padding: 4% 0 4% 0;
-  margin-top: 50px;
+  margin-top: 10px;
   font-family: 'Bangers', sans-serif;
-  font-size: 7em;
+  font-size: 3em;
   color: #63D1F4;
   /border: 10px solid #63D1F4;
 }
