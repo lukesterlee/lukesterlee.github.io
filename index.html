@@ -1,168 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-  <meta charset="utf-8">
-  
-  <link rel = "stylesheet" type="text/css" href="style.css"/>
-  
-  <title>Luke Lee</title>
-  
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js">
-  </script>
-  
-  <script type="text/javascript">
-        function goToByScroll(id){
-                $('html,body').animate({scrollTop: $("#"+id).offset().top-40},'slow');
-        }
-  </script>
 
-  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  
+    <title>Will Aronson - Theater Composer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-  <div id="menu">
-    
-    <div id="name">Will Aronson</div>
-    
-    <div class="button">
-      <a href="javascript:void(0)" onClick="goToByScroll('aboutme')">About</a>
-    </div>
-    <div class="button">
-      <a href="javascript:void(0)" onClick="goToByScroll('coursework')">Works</a>         </div>
-    <div class="button">
-      <a href="javascript:void(0)" onClick="goToByScroll('skills')">News</a>
-    </div>
-    <div class="button">
-      <a href="javascript:void(0)" onClick="goToByScroll('faq')">F</a>
-    </div>
-    <div class="button">
-      <a href="javascript:void(0)" onClick="goToByScroll('contact')">Contact</a>
-    </div>
-  </div>
- 
-    
-    <div id="aboutme">
-      <h2 class="header">About</h2>
-      <img src="https://dl.dropboxusercontent.com/u/19946167/1.jpg">
-      <p>Luke Lee is a 29 years old Queens College student who is pursuing B.A. degree in computer science. </p>
-      <p>Things I can promise to give you all are following :</p>
-      <p id="download"><span>Download Resume</span> : [<a href="https://dl.dropboxusercontent.com/u/19946167/luke_lee_resume.pdf">.PDF</a>] [<a href="https://dl.dropboxusercontent.com/u/19946167/luke_lee_resume.doc">.WORD</a>]</p>
-    <div id="coursework">
-      <h2 class="header">Works</h2>
-      <table class="center">
-        <thead>
-          <tr>
-            <th>Course Code</th>
-            <th>Course Name</th>
-            <th>Grade</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>CSCI 240</td>
-            <td>Computer Organization and Assembly Language</td>
-            <td>B+</td>
-          </tr>
 
-          <tr>
-            <td>CSCI 313</td>
-            <td>Data Structures</td>
-            <td>B+</td>
-          </tr>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-          <tr>
-            <td>CSCI 316</td>
-            <td>Principles of Programming Languages</td>
-            <td>A</td>
-          </tr>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Will</span> Aronson
+                </a>
+            </div>
 
-          <tr>
-            <td>CSCI 320</td>
-            <td>Theory of Computation</td>
-            <td>A</td>
-          </tr>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Works</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-          <tr>
-            <td>CSCI 323</td>
-            <td>Design and Analysis of Algorithms</td>
-            <td>A+</td>
-          </tr>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Will Aronson</h1>
+                        <p class="intro-text">Theater Composer<br>based on New York City</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-          <tr>
-            <td>CSCI 331</td>
-            <td>Database Systems</td>
-            <td>A+</td>
-          </tr>
+    <!-- About Section -->
+    <section id="about" class="container about-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Me</h2>
+				<p>Will Aronson recently composed the score and co-wrote the book for the Korean musical Bungee Jump (multiple Seoul productions), cited last year by the NY Times as Korea’s “most popular original musical,” and winner of Best Score at the 2012 Korea Musical Awards. He has also written the scores for Mother, Me and the Monsters (Barrington Stage; Boston Globe Critic's Pick), My Scary Girl (Best Musical, 2009 New York Musical Theatre Festival), and The Trouble With Doug (NAMT 2010; Theatreworks Palo Alto), for which he also co-wrote the book. Current projects include Hansel & Gretl & Heidi & Günter (2014 NAMT development grant), commissioned by Chicago Shakespeare Theater, and an adaptation of the children's book series Pete the Cat for Theatreworks USA. Other work includes music for Mary Testa’s Sleepless Variations and the vocal and dance arrangements for the William Finn/James Lapine musical, Little Miss Sunshine (Second Stage Theatre). Will is the recipient of a Fulbright grant, an ASCAP Frederick Loewe Award, and a Baryshnikov Fellowship, and is a 2015-2016 resident artist at Ars Nova Uncharted (with librettist Sarah Hammond). He holds a B.A. from Harvard University and an M.F.A. from Tisch/NYU. </p>
+                <p>In addition to his theatrical work, Will has composed and produced nearly 100 tracks for the best-selling Korean children's book/DVD series, <a href="http://www.englishegg.co.kr">English Egg.</a></p>
+            </div>
+        </div>
+    </section>
 
-          <tr>
-            <td>CSCI 340</td>
-            <td>Operating System</td>
-            <td>A-</td>
-          </tr>
+    <!-- Works Section -->
+    <section id="works" class="content-section text-center">
+        <div class="works-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Works</h2>
+                    </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	<section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/thumbnail_maybe.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    2016
+                                </div>
+                                <div class="project-name">
+                                    어쩌면 해피엔딩
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/thumbnail_pete.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    2016
+                                </div>
+                                <div class="project-name">
+                                    Pete the Cat
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/thumbnail_bungee.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    2014
+                                </div>
+                                <div class="project-name">
+                                    Bungee Jump
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/thumbnail_doug.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    2014
+                                </div>
+                                <div class="project-name">
+                                    Trouble with Doug
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/thumbnail_mmm.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    2012
+                                </div>
+                                <div class="project-name">
+                                    Mother, Me, and Monster
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/thumbnail_arsnova.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    more
+                                </div>
+                                <div class="project-name">
+                                    Other Works
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+	
 
-          <tr>
-            <td>CSCI 343</td>
-            <td>Computer Architecture</td>
-            <td>A+</td>
-          </tr>
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Me</h2>
+                <p>Professional inquiries : Ron Gwiazda, Abrams Artists Agency, (646) 461-9325</p>
+				<p><a href="mailto:ron.gwiazda@abramsartny.com">ron.gwiazda@abramsartny.com</a></p>
+                <p>Or contact Will directly at</p>
+				<p><a href="mailto:will_aronson@yahoo.com">will_aronson@yahoo.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-          <tr>
-            <td>CSCI 370</td>
-            <td>Software Engineering</td>
-            <td>A-</td>
-          </tr>
-        </tbody>
-      </table></div>
-    <div id="skills">
-      <h2 class="header">Technical Skills</h2>
-      <ul>
-        <li>C++ : Completed 4 full consecutive semesters with data structures and algorithms</li>
-        <li>Java : Completed 4 full consecutive semesters with algorithms and problem solving</li>
-        <li>Others Skills: MIPS, MS-Office</li>
 
-      </ul></div>
-  <div id="faq">
-    <h2 class="header">FAQ</h2>
-    <ol>
-      <li><span>Why do you want to take this course? What is your goal after graduating from Access Code?</span>
-        <ul>
-          <li>Queens College curriculum is great but they don’t teach real world application skills. My goal is getting a job that I feel passionate about and one that can achieve something important for people.</li>
-        </ul>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Will Aronson 2016</p>
+        </div>
+    </footer>
 
-</li>
-      <li><span>Tell us about something that you are passionate about and how you went about pursuing this passion.</span>
-        <ul>
-          <li>Along with technology, I always have been passionate about music but I never got any chance to learn it when I was young. After I went to college in Korea, I joined an amateur orchestra so I could learn violin for free. Since viola players were missing in our orchestra, I switched my instrument to viola. The desire to learn more about music grew on me over time, so I finally pursued my passion by minoring music in Queens College. One of my hopes is to use technology to build interest and expand access to classical music among young people.</li>
-        </ul>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-</li>
-      <li><span>Describe a problem that you have encountered in the past and how you went about solving that problem.</span>
-        <ul>
-          <li>I joined an amateur orchestra when I was in college in Korea. However, when I was in sophomore year, we couldn't afford to rent out a concert venue. Therefore, I came up with an idea of some sort of local sponsorship. We visited every business (almost 300) including restaurants near our campus with our previous concert program, and asked them to donate money in exchange for putting ads in the program. Our college clubs had never tried something like that, and I was proud that we could put on the concert with community support.</li>
-        </ul>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-</li>
-    </ol></div>
-    <div id="contact">
-      <h2 class="header">Contact Me</h2>
-      <div class="logo">
-        <a target="_blank" href="https://www.facebook.com/lukesterlee">
-          <img src="https://dl.dropboxusercontent.com/u/19946167/facebook.png">
-        </a></div>
-      <div class="logo">
-        <a target="_blank" href="https://google.com/+LukeLee0816">
-          <img src="https://dl.dropboxusercontent.com/u/19946167/google.png">
-        </a></div>
-      <div class="logo">
-        <a target="_blank" href="https://www.linkedin.com/in/lukesterlee">
-          <img src="https://dl.dropboxusercontent.com/u/19946167/linkedin.png">
-        </a></div>
-    
-    
-    <p>Address: <a target="_blank" href="https://www.google.com/maps/place/156-05+65th+Ave,+Flushing,+NY+11367/@40.7372278,-73.8120469,17z/data=!3m1!4b1!4m2!3m1!1s0x89c2605b8ebbdc99:0x9944c3f63d47f219">156-05 65th Ave, Flushing, NY 11367</a> | Tel: (406) 839-4901 | Email: lukesterlee@gmail.com</p>
-  </div>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
 </body>
-</html>
 
+</html>
